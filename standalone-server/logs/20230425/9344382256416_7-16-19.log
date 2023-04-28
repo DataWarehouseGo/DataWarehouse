@@ -1,0 +1,36 @@
+[INFO] 2023-04-25 14:54:27.648 +0000 - Begin to pulling task
+[INFO] 2023-04-25 14:54:27.651 +0000 - Begin to initialize task
+[INFO] 2023-04-25 14:54:27.651 +0000 - Set task startTime: Tue Apr 25 14:54:27 UTC 2023
+[INFO] 2023-04-25 14:54:27.651 +0000 - Set task envFile: /ssd/apache-dolphinscheduler-3.1.5-bin/standalone-server/conf/dolphinscheduler_env.sh
+[INFO] 2023-04-25 14:54:27.652 +0000 - Set task appId: 16_19
+[INFO] 2023-04-25 14:54:27.652 +0000 - End initialize task
+[INFO] 2023-04-25 14:54:27.652 +0000 - Set task status to TaskExecutionStatus{code=1, desc='running'}
+[INFO] 2023-04-25 14:54:27.653 +0000 - TenantCode:ssd check success
+[INFO] 2023-04-25 14:54:27.653 +0000 - ProcessExecDir:/tmp/dolphinscheduler/exec/process/ssd/9335022518560/9344382256416_7/16/19 check success
+[INFO] 2023-04-25 14:54:27.654 +0000 - Resources:{} check success
+[INFO] 2023-04-25 14:54:27.654 +0000 - Task plugin: SQL create success
+[INFO] 2023-04-25 14:54:27.654 +0000 - Success initialized task plugin instance success
+[INFO] 2023-04-25 14:54:27.654 +0000 - Success set taskVarPool: null
+[INFO] 2023-04-25 14:54:27.654 +0000 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=1, sql='INSERT INTO wintop_security.ssd_merge
+SELECT * FROM wintop_security.ssd;
+INSERT INTO wintop_security.ssd_merge
+SELECT * FROM wintop_security.ssd2;', sqlType=1, sendEmail=null, displayRows=10, limit=0, segmentSeparator=@, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2023-04-25 14:54:27.654 +0000 - sql type : POSTGRESQL, datasource : 1, sql : INSERT INTO wintop_security.ssd_merge
+SELECT * FROM wintop_security.ssd;
+INSERT INTO wintop_security.ssd_merge
+SELECT * FROM wintop_security.ssd2; , localParams : [],udfs : null,showType : null,connParams : null,varPool : [] ,query max result limit  0
+[INFO] 2023-04-25 14:54:27.654 +0000 - can't find udf function resource
+[INFO] 2023-04-25 14:54:27.656 +0000 - prepare statement replace sql : 
+INSERT INTO wintop_security.ssd_merge
+SELECT * FROM wintop_security.ssd;
+INSERT INTO wintop_security.ssd_merge
+SELECT * FROM wintop_security.ssd2;, sql parameters : {}
+[INFO] 2023-04-25 14:54:27.661 +0000 - main statement execute update result: 138, for sql: 
+INSERT INTO wintop_security.ssd_merge
+SELECT * FROM wintop_security.ssd;
+INSERT INTO wintop_security.ssd_merge
+SELECT * FROM wintop_security.ssd2;
+[INFO] 2023-04-25 14:54:27.661 +0000 - Send task execute result to master, the current task status: TaskExecutionStatus{code=7, desc='success'}
+[INFO] 2023-04-25 14:54:27.661 +0000 - Remove the current task execute context from worker cache
+[INFO] 2023-04-25 14:54:27.661 +0000 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/ssd/9335022518560/9344382256416_7/16/19
+[INFO] 2023-04-25 14:54:27.662 +0000 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/ssd/9335022518560/9344382256416_7/16/19

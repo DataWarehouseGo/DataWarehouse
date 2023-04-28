@@ -1,0 +1,80 @@
+[INFO] 2023-04-25 11:53:05.723 +0000 - Begin to pulling task
+[INFO] 2023-04-25 11:53:05.725 +0000 - Begin to initialize task
+[INFO] 2023-04-25 11:53:05.725 +0000 - Set task startTime: Tue Apr 25 11:53:05 UTC 2023
+[INFO] 2023-04-25 11:53:05.725 +0000 - Set task envFile: /ssd/apache-dolphinscheduler-3.1.5-bin/standalone-server/conf/dolphinscheduler_env.sh
+[INFO] 2023-04-25 11:53:05.726 +0000 - Set task appId: 6_6
+[INFO] 2023-04-25 11:53:05.726 +0000 - End initialize task
+[INFO] 2023-04-25 11:53:05.726 +0000 - Set task status to TaskExecutionStatus{code=1, desc='running'}
+[INFO] 2023-04-25 11:53:05.727 +0000 - TenantCode:ssd check success
+[INFO] 2023-04-25 11:53:05.728 +0000 - ProcessExecDir:/tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_5/6/6 check success
+[INFO] 2023-04-25 11:53:05.728 +0000 - Resources:{} check success
+[INFO] 2023-04-25 11:53:05.728 +0000 - Task plugin: SQL create success
+[INFO] 2023-04-25 11:53:05.728 +0000 - Success initialized task plugin instance success
+[INFO] 2023-04-25 11:53:05.728 +0000 - Success set taskVarPool: null
+[INFO] 2023-04-25 11:53:05.728 +0000 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=1, sql='INSERT INTO wintop_security.ssd (id, pid, url, permissions, type1, icon, sort, creator, create_date, updater, update_date, system_type, remarks, background_file_id)
+SELECT id, pid, url, permissions, type, icon, sort, creator, create_date, updater, update_date, system_type, remarks, background_file_id
+FROM wintop_security.sys_menu;
+', sqlType=0, sendEmail=null, displayRows=10, limit=0, segmentSeparator=, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2023-04-25 11:53:05.729 +0000 - sql type : POSTGRESQL, datasource : 1, sql : INSERT INTO wintop_security.ssd (id, pid, url, permissions, type1, icon, sort, creator, create_date, updater, update_date, system_type, remarks, background_file_id)
+SELECT id, pid, url, permissions, type, icon, sort, creator, create_date, updater, update_date, system_type, remarks, background_file_id
+FROM wintop_security.sys_menu;
+ , localParams : [],udfs : null,showType : null,connParams : null,varPool : [] ,query max result limit  0
+[INFO] 2023-04-25 11:53:05.729 +0000 - can't find udf function resource
+[INFO] 2023-04-25 11:53:05.732 +0000 - prepare statement replace sql : INSERT INTO wintop_security.ssd (id, pid, url, permissions, type1, icon, sort, creator, create_date, updater, update_date, system_type, remarks, background_file_id)
+SELECT id, pid, url, permissions, type, icon, sort, creator, create_date, updater, update_date, system_type, remarks, background_file_id
+FROM wintop_security.sys_menu;
+, sql parameters : {}
+[ERROR] 2023-04-25 11:53:05.735 +0000 - execute sql error: ERROR: duplicate key value violates unique constraint "ssd_pkey"
+  Detail: Key (background_file_id)=() already exists.
+[ERROR] 2023-04-25 11:53:05.736 +0000 - sql task error
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "ssd_pkey"
+  Detail: Key (background_file_id)=() already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:133)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeQuery(SqlTask.java:303)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:207)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:161)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerDelayTaskExecuteRunnable.executeTask(DefaultWorkerDelayTaskExecuteRunnable.java:49)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecuteRunnable.run(WorkerTaskExecuteRunnable.java:174)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2023-04-25 11:53:05.736 +0000 - Task execute failed, due to meet an exception
+org.apache.dolphinscheduler.plugin.task.api.TaskException: Execute sql task failed
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:168)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerDelayTaskExecuteRunnable.executeTask(DefaultWorkerDelayTaskExecuteRunnable.java:49)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecuteRunnable.run(WorkerTaskExecuteRunnable.java:174)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "ssd_pkey"
+  Detail: Key (background_file_id)=() already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:133)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeQuery(SqlTask.java:303)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:207)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:161)
+	... 9 common frames omitted
+[INFO] 2023-04-25 11:53:05.737 +0000 - Get a exception when execute the task, will send the task execute result to master, the current task execute result is TaskExecutionStatus{code=6, desc='failure'}

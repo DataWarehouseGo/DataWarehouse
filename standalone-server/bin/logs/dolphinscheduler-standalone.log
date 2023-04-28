@@ -1,0 +1,185 @@
+[INFO] 2023-04-27 09:58:13.361 +0000 org.hibernate.validator.internal.util.Version:[21] - HV000001: Hibernate Validator 6.2.2.Final
+[WARN] 2023-04-27 09:58:13.603 +0000 o.s.cloud.kubernetes.commons.profile.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2023-04-27 09:58:16.299 +0000 o.s.cloud.kubernetes.commons.profile.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2023-04-27 09:58:16.301 +0000 org.apache.dolphinscheduler.StandaloneServer:[640] - The following 1 profile is active: "h2"
+[INFO] 2023-04-27 09:58:21.592 +0000 org.springframework.cloud.context.scope.GenericScope:[283] - BeanFactory id=41607020-7f9a-3960-95f0-1d70694d2839
+[INFO] 2023-04-27 09:58:22.810 +0000 org.eclipse.jetty.util.log:[170] - Logging initialized @20836ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2023-04-27 09:58:23.287 +0000 org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2023-04-27 09:58:23.293 +0000 org.eclipse.jetty.server.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_362-b08
+[INFO] 2023-04-27 09:58:23.587 +0000 org.eclipse.jetty.server.handler.ContextHandler.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2023-04-27 09:58:23.671 +0000 org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 7344 ms
+[INFO] 2023-04-27 09:58:27.509 +0000 org.eclipse.jetty.server.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2023-04-27 09:58:27.511 +0000 org.eclipse.jetty.server.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2023-04-27 09:58:27.516 +0000 org.eclipse.jetty.server.session:[132] - node0 Scavenging every 600000ms
+[INFO] 2023-04-27 09:58:27.530 +0000 org.eclipse.jetty.server.handler.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@1ac68548{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.2999282063965602109/, jar:file:/ssd/apache-dolphinscheduler-3.1.5-bin/api-server/libs/springfox-swagger-ui-3.0.0.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2023-04-27 09:58:27.531 +0000 org.eclipse.jetty.server.Server:[415] - Started @25557ms
+[INFO] 2023-04-27 09:58:27.648 +0000 com.zaxxer.hikari.HikariDataSource:[110] - HikariPool-1 - Starting...
+[INFO] 2023-04-27 09:58:28.071 +0000 com.zaxxer.hikari.HikariDataSource:[123] - HikariPool-1 - Start completed.
+[INFO] 2023-04-27 09:58:31.610 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.cpu.isalist
+[INFO] 2023-04-27 09:58:31.611 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: zookeeper.jmx.log4j.disable
+[INFO] 2023-04-27 09:58:31.612 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.io.unicode.encoding
+[INFO] 2023-04-27 09:58:31.612 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.cpu.endian
+[INFO] 2023-04-27 09:58:31.613 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vendor.url.bug
+[INFO] 2023-04-27 09:58:31.613 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: file.separator
+[INFO] 2023-04-27 09:58:31.613 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: com.zaxxer.hikari.pool_number
+[INFO] 2023-04-27 09:58:31.614 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.specification.maintenance.version
+[INFO] 2023-04-27 09:58:31.614 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.awt.headless
+[INFO] 2023-04-27 09:58:31.615 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vendor
+[INFO] 2023-04-27 09:58:31.615 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.boot.class.path
+[INFO] 2023-04-27 09:58:31.615 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.ext.dirs
+[INFO] 2023-04-27 09:58:31.616 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.version
+[INFO] 2023-04-27 09:58:31.616 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vm.info
+[INFO] 2023-04-27 09:58:31.616 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: awt.toolkit
+[INFO] 2023-04-27 09:58:31.617 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: user.language
+[INFO] 2023-04-27 09:58:31.617 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.specification.vendor
+[INFO] 2023-04-27 09:58:31.617 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.java.command
+[INFO] 2023-04-27 09:58:31.618 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.home
+[INFO] 2023-04-27 09:58:31.618 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.arch.data.model
+[INFO] 2023-04-27 09:58:31.619 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vm.specification.version
+[INFO] 2023-04-27 09:58:31.619 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.class.path
+[INFO] 2023-04-27 09:58:31.619 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: user.name
+[INFO] 2023-04-27 09:58:31.620 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: file.encoding
+[INFO] 2023-04-27 09:58:31.620 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.specification.version
+[INFO] 2023-04-27 09:58:31.620 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.awt.printerjob
+[INFO] 2023-04-27 09:58:31.621 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: user.timezone
+[INFO] 2023-04-27 09:58:31.621 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: registry.zookeeper.connect-string
+[INFO] 2023-04-27 09:58:31.621 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: user.home
+[INFO] 2023-04-27 09:58:31.622 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: os.version
+[INFO] 2023-04-27 09:58:31.622 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.management.compiler
+[INFO] 2023-04-27 09:58:31.623 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.specification.name
+[INFO] 2023-04-27 09:58:31.623 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.class.version
+[INFO] 2023-04-27 09:58:31.623 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: spring.beaninfo.ignore
+[INFO] 2023-04-27 09:58:31.624 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.library.path
+[INFO] 2023-04-27 09:58:31.624 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: jetty.git.hash
+[INFO] 2023-04-27 09:58:31.625 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.jnu.encoding
+[INFO] 2023-04-27 09:58:31.625 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: FILE_LOG_CHARSET
+[INFO] 2023-04-27 09:58:31.625 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: os.name
+[INFO] 2023-04-27 09:58:31.626 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vm.specification.vendor
+[INFO] 2023-04-27 09:58:31.626 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.io.tmpdir
+[INFO] 2023-04-27 09:58:31.627 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: line.separator
+[INFO] 2023-04-27 09:58:31.628 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: CONSOLE_LOG_CHARSET
+[INFO] 2023-04-27 09:58:31.628 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.endorsed.dirs
+[INFO] 2023-04-27 09:58:31.628 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: os.arch
+[INFO] 2023-04-27 09:58:31.629 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.awt.graphicsenv
+[INFO] 2023-04-27 09:58:31.629 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.runtime.version
+[INFO] 2023-04-27 09:58:31.629 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: PID
+[INFO] 2023-04-27 09:58:31.630 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vm.specification.name
+[INFO] 2023-04-27 09:58:31.630 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: user.dir
+[INFO] 2023-04-27 09:58:31.630 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: user.country
+[INFO] 2023-04-27 09:58:31.631 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.java.launcher
+[INFO] 2023-04-27 09:58:31.631 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.os.patch.level
+[INFO] 2023-04-27 09:58:31.631 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vm.name
+[INFO] 2023-04-27 09:58:31.631 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: file.encoding.pkg
+[INFO] 2023-04-27 09:58:31.632 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: path.separator
+[INFO] 2023-04-27 09:58:31.632 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vm.vendor
+[INFO] 2023-04-27 09:58:31.632 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vendor.url
+[INFO] 2023-04-27 09:58:31.633 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: sun.boot.library.path
+[INFO] 2023-04-27 09:58:31.633 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.vm.version
+[INFO] 2023-04-27 09:58:31.633 +0000 org.apache.dolphinscheduler.common.utils.PropertyUtils:[71] - Overriding property from system property: java.runtime.name
+[INFO] 2023-04-27 09:58:32.188 +0000 org.apache.curator.framework.imps.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2023-04-27 09:58:32.290 +0000 org.apache.curator.framework.imps.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2023-04-27 09:58:32.378 +0000 org.apache.curator.framework.state.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2023-04-27 09:58:32.435 +0000 org.apache.curator.framework.imps.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2023-04-27 09:58:32.436 +0000 org.apache.curator.framework.imps.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2023-04-27 09:58:33.025 +0000 org.apache.dolphinscheduler.service.log.LogClient:[64] - Initialized LogClientService with config: NettyClientConfig(workerThreads=16, tcpNoDelay=true, soKeepalive=true, sendBufferSize=65535, receiveBufferSize=65535, connectTimeoutMillis=3000)
+[INFO] 2023-04-27 09:58:33.873 +0000 org.quartz.impl.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2023-04-27 09:58:33.958 +0000 org.quartz.core.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2023-04-27 09:58:33.959 +0000 org.quartz.core.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2023-04-27 09:58:33.969 +0000 org.springframework.scheduling.quartz.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2023-04-27 09:58:33.974 +0000 org.springframework.scheduling.quartz.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2023-04-27 09:58:33.977 +0000 org.quartz.core.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId 'localhost.localdomain1682589513894'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2023-04-27 09:58:33.977 +0000 org.quartz.impl.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2023-04-27 09:58:33.977 +0000 org.quartz.impl.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2023-04-27 09:58:33.978 +0000 org.quartz.core.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@309b6768
+[INFO] 2023-04-27 09:58:34.437 +0000 org.apache.dolphinscheduler.api.python.PythonGateway:[687] - PythonGatewayService started on: /0.0.0.0
+[WARN] 2023-04-27 09:58:34.483 +0000 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:[591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pythonGateway': Invocation of init method failed; nested exception is py4j.Py4JNetworkException
+[INFO] 2023-04-27 09:58:34.485 +0000 org.quartz.core.QuartzScheduler:[666] - Scheduler DolphinScheduler_$_localhost.localdomain1682589513894 shutting down.
+[INFO] 2023-04-27 09:58:34.485 +0000 org.quartz.core.QuartzScheduler:[585] - Scheduler DolphinScheduler_$_localhost.localdomain1682589513894 paused.
+[INFO] 2023-04-27 09:58:34.487 +0000 org.quartz.core.QuartzScheduler:[740] - Scheduler DolphinScheduler_$_localhost.localdomain1682589513894 shutdown complete.
+[INFO] 2023-04-27 09:58:34.488 +0000 org.springframework.scheduling.quartz.SchedulerFactoryBean:[847] - Shutting down Quartz Scheduler
+[INFO] 2023-04-27 09:58:34.571 +0000 org.apache.dolphinscheduler.remote.NettyRemotingClient:[334] - netty client closed
+[INFO] 2023-04-27 09:58:34.573 +0000 org.apache.dolphinscheduler.service.log.LogClient:[229] - LogClientService closed
+[INFO] 2023-04-27 09:58:34.578 +0000 org.apache.curator.framework.imps.CuratorFrameworkImpl:[998] - backgroundOperationsLoop exiting
+[INFO] 2023-04-27 09:58:34.710 +0000 org.apache.dolphinscheduler.alert.AlertServer:[98] - Alert server is stopping, cause: alert server destroy
+[ERROR] 2023-04-27 09:58:37.717 +0000 org.apache.dolphinscheduler.alert.AlertServer:[107] - Alert server stop failed, cause: alert server destroy
+java.lang.NullPointerException: null
+	at org.apache.dolphinscheduler.alert.AlertServer.destroy(AlertServer.java:104)
+	at org.apache.dolphinscheduler.alert.AlertServer.close(AlertServer.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:596)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at org.apache.dolphinscheduler.StandaloneServer.main(StandaloneServer.java:45)
+[INFO] 2023-04-27 09:58:37.721 +0000 com.zaxxer.hikari.HikariDataSource:[350] - HikariPool-1 - Shutdown initiated...
+[INFO] 2023-04-27 09:58:37.734 +0000 com.zaxxer.hikari.HikariDataSource:[352] - HikariPool-1 - Shutdown completed.
+[INFO] 2023-04-27 09:58:37.741 +0000 org.eclipse.jetty.server.session:[149] - node0 Stopped scavenging
+[INFO] 2023-04-27 09:58:37.743 +0000 org.eclipse.jetty.server.handler.ContextHandler:[1159] - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@1ac68548{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.2999282063965602109/, jar:file:/ssd/apache-dolphinscheduler-3.1.5-bin/api-server/libs/springfox-swagger-ui-3.0.0.jar!/META-INF/resources],STOPPED}
+[INFO] 2023-04-27 09:58:37.782 +0000 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[INFO] 2023-04-27 09:58:37.786 +0000 org.apache.dolphinscheduler.StandaloneServer:[53] - Receive spring context close event: org.springframework.boot.context.event.ApplicationFailedEvent[source=org.springframework.boot.SpringApplication@1af29a19], will closed zookeeper server
+[ERROR] 2023-04-27 09:58:37.848 +0000 org.springframework.boot.SpringApplication:[824] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pythonGateway': Invocation of init method failed; nested exception is py4j.Py4JNetworkException
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at org.apache.dolphinscheduler.StandaloneServer.main(StandaloneServer.java:45)
+Caused by: py4j.Py4JNetworkException: null
+	at py4j.GatewayServer.startSocket(GatewayServer.java:788)
+	at py4j.GatewayServer.start(GatewayServer.java:763)
+	at py4j.GatewayServer.start(GatewayServer.java:746)
+	at org.apache.dolphinscheduler.api.python.PythonGateway.start(PythonGateway.java:688)
+	at org.apache.dolphinscheduler.api.python.PythonGateway.init(PythonGateway.java:669)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:390)
+	at py4j.GatewayServer.startSocket(GatewayServer.java:786)
+	... 29 common frames omitted

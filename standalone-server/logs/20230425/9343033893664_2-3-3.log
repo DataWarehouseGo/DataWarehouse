@@ -1,0 +1,46 @@
+[INFO] 2023-04-25 11:42:49.068 +0000 - Begin to pulling task
+[INFO] 2023-04-25 11:42:49.071 +0000 - Begin to initialize task
+[INFO] 2023-04-25 11:42:49.071 +0000 - Set task startTime: Tue Apr 25 11:42:49 UTC 2023
+[INFO] 2023-04-25 11:42:49.071 +0000 - Set task envFile: /ssd/apache-dolphinscheduler-3.1.5-bin/standalone-server/conf/dolphinscheduler_env.sh
+[INFO] 2023-04-25 11:42:49.071 +0000 - Set task appId: 3_3
+[INFO] 2023-04-25 11:42:49.071 +0000 - End initialize task
+[INFO] 2023-04-25 11:42:49.072 +0000 - Set task status to TaskExecutionStatus{code=1, desc='running'}
+[INFO] 2023-04-25 11:42:49.072 +0000 - TenantCode:ssd check success
+[INFO] 2023-04-25 11:42:49.073 +0000 - ProcessExecDir:/tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_2/3/3 check success
+[INFO] 2023-04-25 11:42:49.073 +0000 - Resources:{} check success
+[INFO] 2023-04-25 11:42:49.074 +0000 - Task plugin: DATAX create success
+[INFO] 2023-04-25 11:42:49.074 +0000 - datax task params {"localParams":[],"resourceList":[],"customConfig":0,"dsType":"POSTGRESQL","dataSource":1,"dtType":"POSTGRESQL","dataTarget":1,"sql":"SELECT * FROM wintop_security.sys_menu","targetTable":"wintop_security.ssd","jobSpeedByte":0,"jobSpeedRecord":1000,"preStatements":[],"postStatements":[],"xms":1,"xmx":1}
+[INFO] 2023-04-25 11:42:49.074 +0000 - Success initialized task plugin instance success
+[INFO] 2023-04-25 11:42:49.074 +0000 - Success set taskVarPool: null
+[WARN] 2023-04-25 11:42:49.075 +0000 - grammatical analysis sql column [ * ] failed
+java.lang.RuntimeException: grammatical analysis sql column [ * ] failed
+	at org.apache.dolphinscheduler.plugin.task.datax.DataxTask.tryGrammaticalAnalysisSqlColumnNames(DataxTask.java:542)
+	at org.apache.dolphinscheduler.plugin.task.datax.DataxTask.parsingSqlColumnNames(DataxTask.java:472)
+	at org.apache.dolphinscheduler.plugin.task.datax.DataxTask.buildDataxJobContentJson(DataxTask.java:283)
+	at org.apache.dolphinscheduler.plugin.task.datax.DataxTask.buildDataxJsonFile(DataxTask.java:215)
+	at org.apache.dolphinscheduler.plugin.task.datax.DataxTask.handle(DataxTask.java:159)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerDelayTaskExecuteRunnable.executeTask(DefaultWorkerDelayTaskExecuteRunnable.java:49)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecuteRunnable.run(WorkerTaskExecuteRunnable.java:174)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2023-04-25 11:42:49.076 +0000 - try to execute sql analysis query column name
+[INFO] 2023-04-25 11:42:49.083 +0000 - Begin to create command file:/tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_2/3/3/3_3.command
+[INFO] 2023-04-25 11:42:49.084 +0000 - Success create command file, command: #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+source /ssd/apache-dolphinscheduler-3.1.5-bin/standalone-server/conf/dolphinscheduler_env.sh
+/tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_2/3/3/3_3_node.sh
+[INFO] 2023-04-25 11:42:49.087 +0000 - task run command: sudo -u ssd -E bash /tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_2/3/3/3_3.command
+[INFO] 2023-04-25 11:42:49.088 +0000 - process start, process id is: 24080
+[INFO] 2023-04-25 11:42:49.127 +0000 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_2/3/3, processId:24080 ,exitStatusCode:127 ,processWaitForStatus:true ,processExitValue:127
+[INFO] 2023-04-25 11:42:49.129 +0000 - Send task execute result to master, the current task status: TaskExecutionStatus{code=6, desc='failure'}
+[INFO] 2023-04-25 11:42:49.129 +0000 - Remove the current task execute context from worker cache
+[INFO] 2023-04-25 11:42:49.129 +0000 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_2/3/3
+[INFO] 2023-04-25 11:42:49.130 +0000 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_2/3/3
+[INFO] 2023-04-25 11:42:50.089 +0000 -  -> /tmp/dolphinscheduler/exec/process/ssd/9335022518560/9343033893664_2/3/3/3_3_node.sh: line 1: /opt/soft/python/bin/python2.7: No such file or directory
+[INFO] 2023-04-25 11:42:50.091 +0000 - FINALIZE_SESSION

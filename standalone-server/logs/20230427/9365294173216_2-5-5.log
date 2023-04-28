@@ -1,0 +1,125 @@
+[INFO] 2023-04-27 12:08:12.134 +0000 - Begin to pulling task
+[INFO] 2023-04-27 12:08:12.137 +0000 - Begin to initialize task
+[INFO] 2023-04-27 12:08:12.137 +0000 - Set task startTime: Thu Apr 27 12:08:12 UTC 2023
+[INFO] 2023-04-27 12:08:12.137 +0000 - Set task envFile: /ssd/apache-dolphinscheduler-3.1.5-bin/standalone-server/conf/dolphinscheduler_env.sh
+[INFO] 2023-04-27 12:08:12.137 +0000 - Set task appId: 5_5
+[INFO] 2023-04-27 12:08:12.137 +0000 - End initialize task
+[INFO] 2023-04-27 12:08:12.139 +0000 - Set task status to TaskExecutionStatus{code=1, desc='running'}
+[INFO] 2023-04-27 12:08:12.139 +0000 - TenantCode:liuren check success
+[INFO] 2023-04-27 12:08:12.140 +0000 - ProcessExecDir:/tmp/dolphinscheduler/exec/process/liuren/9364448922016/9365294173216_2/5/5 check success
+[INFO] 2023-04-27 12:08:12.140 +0000 - Resources:{} check success
+[INFO] 2023-04-27 12:08:12.141 +0000 - Task plugin: SQL create success
+[INFO] 2023-04-27 12:08:12.141 +0000 - Success initialized task plugin instance success
+[INFO] 2023-04-27 12:08:12.141 +0000 - Success set taskVarPool: null
+[INFO] 2023-04-27 12:08:12.141 +0000 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=1, sql='DROP TABLE IF EXISTS "raw_data"."t_audit_opinion";
+CREATE TABLE "raw_data"."t_audit_opinion" (
+  "id" varchar(32) COLLATE "pg_catalog"."default" NOT NULL,
+  "node_id" varchar(50) COLLATE "pg_catalog"."default",
+  "node_name" varchar(255) COLLATE "pg_catalog"."default",
+  "opinion" text COLLATE "pg_catalog"."default",
+  "auditor_id" varchar(32) COLLATE "pg_catalog"."default",
+  "picture_id" varchar(100) COLLATE "pg_catalog"."default",
+  "audit_date" timestamp(6),
+  "work_id" varchar(32) COLLATE "pg_catalog"."default",
+  "create_time" timestamp(6)
+)
+;
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."id" IS '主键id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."node_id" IS '环节id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."node_name" IS '环节（环节名称）';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."opinion" IS '意见';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."auditor_id" IS '审核人id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."picture_id" IS '用户签名图片地址';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."audit_date" IS '审核时间';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."work_id" IS '流程id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."create_time" IS '创建时间';
+COMMENT ON TABLE "raw_data"."t_audit_opinion" IS '审核意见表';
+', sqlType=0, sendEmail=null, displayRows=10, limit=0, segmentSeparator=, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2023-04-27 12:08:12.141 +0000 - sql type : POSTGRESQL, datasource : 1, sql : DROP TABLE IF EXISTS "raw_data"."t_audit_opinion";
+CREATE TABLE "raw_data"."t_audit_opinion" (
+  "id" varchar(32) COLLATE "pg_catalog"."default" NOT NULL,
+  "node_id" varchar(50) COLLATE "pg_catalog"."default",
+  "node_name" varchar(255) COLLATE "pg_catalog"."default",
+  "opinion" text COLLATE "pg_catalog"."default",
+  "auditor_id" varchar(32) COLLATE "pg_catalog"."default",
+  "picture_id" varchar(100) COLLATE "pg_catalog"."default",
+  "audit_date" timestamp(6),
+  "work_id" varchar(32) COLLATE "pg_catalog"."default",
+  "create_time" timestamp(6)
+)
+;
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."id" IS '主键id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."node_id" IS '环节id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."node_name" IS '环节（环节名称）';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."opinion" IS '意见';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."auditor_id" IS '审核人id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."picture_id" IS '用户签名图片地址';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."audit_date" IS '审核时间';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."work_id" IS '流程id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."create_time" IS '创建时间';
+COMMENT ON TABLE "raw_data"."t_audit_opinion" IS '审核意见表';
+ , localParams : [],udfs : null,showType : null,connParams : null,varPool : [] ,query max result limit  0
+[INFO] 2023-04-27 12:08:12.142 +0000 - can't find udf function resource
+[INFO] 2023-04-27 12:08:12.144 +0000 - prepare statement replace sql : DROP TABLE IF EXISTS "raw_data"."t_audit_opinion";
+CREATE TABLE "raw_data"."t_audit_opinion" (
+  "id" varchar(32) COLLATE "pg_catalog"."default" NOT NULL,
+  "node_id" varchar(50) COLLATE "pg_catalog"."default",
+  "node_name" varchar(255) COLLATE "pg_catalog"."default",
+  "opinion" text COLLATE "pg_catalog"."default",
+  "auditor_id" varchar(32) COLLATE "pg_catalog"."default",
+  "picture_id" varchar(100) COLLATE "pg_catalog"."default",
+  "audit_date" timestamp(6),
+  "work_id" varchar(32) COLLATE "pg_catalog"."default",
+  "create_time" timestamp(6)
+)
+;
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."id" IS '主键id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."node_id" IS '环节id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."node_name" IS '环节（环节名称）';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."opinion" IS '意见';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."auditor_id" IS '审核人id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."picture_id" IS '用户签名图片地址';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."audit_date" IS '审核时间';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."work_id" IS '流程id';
+COMMENT ON COLUMN "raw_data"."t_audit_opinion"."create_time" IS '创建时间';
+COMMENT ON TABLE "raw_data"."t_audit_opinion" IS '审核意见表';
+, sql parameters : {}
+[ERROR] 2023-04-27 12:08:12.323 +0000 - execute sql error: No results were returned by the query.
+[ERROR] 2023-04-27 12:08:12.324 +0000 - sql task error
+org.postgresql.util.PSQLException: No results were returned by the query.
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeQuery(SqlTask.java:303)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:207)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:161)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerDelayTaskExecuteRunnable.executeTask(DefaultWorkerDelayTaskExecuteRunnable.java:49)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecuteRunnable.run(WorkerTaskExecuteRunnable.java:174)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2023-04-27 12:08:12.324 +0000 - Task execute failed, due to meet an exception
+org.apache.dolphinscheduler.plugin.task.api.TaskException: Execute sql task failed
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:168)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerDelayTaskExecuteRunnable.executeTask(DefaultWorkerDelayTaskExecuteRunnable.java:49)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecuteRunnable.run(WorkerTaskExecuteRunnable.java:174)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.postgresql.util.PSQLException: No results were returned by the query.
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeQuery(SqlTask.java:303)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:207)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:161)
+	... 9 common frames omitted
+[INFO] 2023-04-27 12:08:12.326 +0000 - Get a exception when execute the task, will send the task execute result to master, the current task execute result is TaskExecutionStatus{code=6, desc='failure'}
