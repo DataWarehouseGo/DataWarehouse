@@ -1,0 +1,65 @@
+spring:
+  jackson:
+    time-zone: UTC
+    date-format: "yyyy-MM-dd HH:mm:ss"
+  banner:
+    charset: UTF-8
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.0.207:5432/datawarehouse
+    username: postgres
+    password: Cloudmap123
+    hikari:
+      connection-test-query: select 1
+      minimum-idle: 5
+      auto-commit: true
+      validation-timeout: 3000
+      pool-name: datawarehouse
+      maximum-pool-size: 50
+      connection-timeout: 30000
+      idle-timeout: 600000
+      leak-detection-threshold: 0
+      initialization-fail-timeout: 1
+
+server:
+  port: 50053
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+  health:
+    db:
+      enabled: true
+    defaults:
+      enabled: false
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+alert:
+  port: 50052
+  # Mark each alert of alert server if late after x milliseconds as failed.
+  # Define value is (0 = infinite), and alert server would be waiting alert result.
+  wait-timeout: 0
+
+metrics:
+  enabled: true
+
+# Override by profile
+
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: mysql
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/datawarehouse
+#    username: root
+#    password: root
